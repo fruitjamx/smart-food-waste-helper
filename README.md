@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+# Smart Food Waste Helper
+Final project for the Building AI course
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Summary
+Smart Food Waste Helper is an AI-based app that helps people reduce food waste 
+by tracking food items at home, sending expiry reminders, and suggesting meals 
+based on available ingredients. It helps families, students, and busy adults 
+save money and reduce unnecessary waste.
 
-## Available Scripts
+## Background
+Food waste is a very common problem in everyday life. Many people buy too much 
+food, forget what they already have, or fail to use ingredients before they expire.
+This affects households worldwide and has both financial and environmental consequences.
 
-In the project directory, you can run:
+Problems this idea solves:
+* People forgetting what food they already have at home
+* Food expiring before it gets used
+* Not knowing what meals to cook with available ingredients
+* Unnecessary spending on food that gets thrown away
 
-### `npm start`
+I chose this topic because it is something many people experience personally, 
+and I believe AI can make a practical, everyday difference in reducing waste 
+and saving money.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## How is it used?
+The app is used at home by anyone who shops for food and cooks meals. Users can:
+* Upload photos of food items for automatic recognition
+* Scan receipts to log purchases automatically
+* Enter food items manually if preferred
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The app then organizes the food inventory, sends reminders when items are close 
+to expiring, and suggests recipes to use up ingredients before they go to waste.
 
-### `npm test`
+Target users include:
+* Families managing household groceries
+* Students on tight budgets
+* Busy working adults with limited time to plan meals
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Data sources and AI methods
+The app would rely on the following data:
+* Food item names and expiry dates
+* Photos of food and product labels
+* Shopping receipts
+* Recipe databases
 
-### `npm run build`
+| AI Method | Purpose |
+| --------- | ------- |
+| Image Recognition | Identifying food items from photos |
+| Text Recognition (OCR) | Reading expiry dates from labels and receipts |
+| Recommendation System | Suggesting recipes based on available ingredients |
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+These techniques combined make the app convenient, accurate, and genuinely useful 
+in daily life without requiring too much manual effort from the user.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Challenges
+The project has some important limitations to consider:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* Image recognition may fail if photo quality is poor or lighting is bad
+* Expiry dates can be difficult to read if labels are unclear or damaged
+* The system depends on users keeping their food list up to date — 
+  if items are not added or removed, accuracy will suffer
+* Privacy considerations around receipt scanning and household data storage
+* The app cannot account for food stored in unlabelled containers or 
+  items bought from markets without standard packaging
 
-### `npm run eject`
+## What next?
+The project could grow in several directions:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* Integration with grocery delivery apps and supermarket loyalty systems 
+  to log purchases automatically
+* Connection with smart kitchen devices (smart fridges, scales) for 
+  automatic inventory tracking
+* Nutrition-based meal recommendations to support both health and sustainability
+* Shopping suggestions based on what the user is already running low on
+* Community recipe sharing features to inspire users with new meal ideas
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To move forward, the project would benefit from partnerships with grocery 
+retailers, access to large recipe databases, and expertise in mobile app 
+development and computer vision.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Acknowledgments
+* Inspired by a common real-life problem experienced in households worldwide
+* Recipe data could be sourced from open databases such as 
+  [Open Food Facts](https://world.openfoodfacts.org/) / 
+  [Open Database License](https://opendatacommons.org/licenses/odbl/)
+* Image recognition could build on open-source tools such as 
+  [TensorFlow](https://www.tensorflow.org/) / Apache 2.0 License
+* All external data, images, and tools would be used with proper 
+  credit and in accordance with their respective licenses
