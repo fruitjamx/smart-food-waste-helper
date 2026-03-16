@@ -1,6 +1,5 @@
 # Smart Food Waste Helper
 Final project for the Building AI course
-https://smart-food-waste-helper.vercel.app
 
 ## Summary
 Smart Food Waste Helper is an AI-based app that helps people reduce food waste 
